@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    background-color: #bbada0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.score-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.score-label {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+.score {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 10px;
+    background-color: #ccc0b3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.grid-cell {
+    background-color: #eee4da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #776e65;
+}
+
+.grid-cell.value-2 { background-color: #eee4da; }
+.grid-cell.value-4 { background-color: #ede0c8; }
+.grid-cell.value-8 { background-color: #f2b179; color: white; }
+.grid-cell.value-16 { background-color: #f59563; color: white; }
+.grid-cell.value-32 { background-color: #f67c5f; color: white; }
+.grid-cell.value-64 { background-color: #f65e3b; color: white; }
+.grid-cell.value-128 { background-color: #edcf72; color: white; }
+.grid-cell.value-256 { background-color: #edcc61; color: white; }
+.grid-cell.value-512 { background-color: #edc850; color: white; }
+.grid-cell.value-1024 { background-color: #edc53f; color: white; }
+.grid-cell.value-2048 { background-color: #edc22e; color: white; }
+
+.game-over-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2em;
+    text-align: center;
+}
